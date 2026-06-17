@@ -1,0 +1,14 @@
+{
+  "name": "IFBB Fitness Challenge Trainer",
+  "short_name": "FC Trainer",
+  "description": "Preparación oficial para atletas de IFBB Fitness Challenge",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#0a0a14",
+  "theme_color": "#ffd700",
+  "orientation": "portrait-primary",
+  "categories": ["sports", "fitness", "health"],
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

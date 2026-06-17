@@ -1,0 +1,7 @@
+{
+  "dialect": "mysql",
+  "schema": "./src/db/schema.ts",
+  "dbCredentials": {
+    "url": "mysql://u613470100_fitcha:mamcyj11JM.,@localhost:3306/u613470100_fitcha"
+  }
+}
