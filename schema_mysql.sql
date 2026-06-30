@@ -746,6 +746,23 @@ ON DUPLICATE KEY UPDATE
   role = 'ADMIN',
   is_active = 1;
 
+-- Crear el perfil de atleta asociado al administrador
+INSERT INTO `athletes` 
+  (`id`, `user_id`, `first_name`, `last_name`, `date_of_birth`, `gender`, `age_category`, `competition_level`, `competition_modality`, `available_days_json`) 
+VALUES 
+  ('athlete-admin-001', 
+   'admin-ifbb-001', 
+   'Admin', 
+   'IFBB', 
+   '1990-01-01 00:00:00', 
+   'MALE', 
+   'SENIOR', 
+   'GOLD', 
+   'INDIVIDUAL', 
+   '["MONDAY","WEDNESDAY","FRIDAY","SATURDAY"]')
+ON DUPLICATE KEY UPDATE 
+  user_id = VALUES(user_id);
+
 -- ─────────────────────────────────────────────────────────────
 -- 5. VERIFICACIONES DE INTEGRIDAD
 -- ─────────────────────────────────────────────────────────────
