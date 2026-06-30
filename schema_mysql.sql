@@ -738,8 +738,8 @@ INSERT INTO `users`
 VALUES 
   ('admin-ifbb-001', 
    'admin@fenifisc.com', 
-   -- Hash bcrypt generado para la contraseña 'mamcyj11JM.,'
-   '$2b$12$F6hSlAFgr0eS5fVu5tVi7.Hvsp7A9Uv3R9E2OpHo20ciB2FfYNETy',
+   -- Hash bcrypt generado con bcryptjs v3 para la contraseña 'mamcyj11JM.,'
+   '$2b$12$nfkHfL51EHrnZrveyKMpGeLBsu8W4MinpQPzCVNSv7HfjLxt99qn.',
    'ADMIN', 1, 1)
 ON DUPLICATE KEY UPDATE 
   password_hash = VALUES(password_hash),
